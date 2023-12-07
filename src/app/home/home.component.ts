@@ -14,7 +14,7 @@ import { HousingService } from '../housing.service';
   template: `
     <section>
       <form>
-        <input type="text" placeholder="Filter by city" #filter>
+        <input type="text" background-color="red" placeholder="Filter by city" #filter>
         <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
       </form>
     </section>
@@ -25,7 +25,7 @@ import { HousingService } from '../housing.service';
       </app-housing-location>
     </section>
   `,
-  styleUrls: ['./home.component.css'],
+  styleUrls: ['./home.component.scss'],
 })
 
 export class HomeComponent {
